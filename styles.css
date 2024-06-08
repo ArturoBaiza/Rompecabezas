@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.tablero {
+  background: url(https://www.fundacionaquae.org/wp-content/uploads/2016/01/nutria.jpg);
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pieza {
+  width: 33.33%;
+  height: 33.33%;
+  background: linear-gradient(45deg, white, teal);
+  background-image: url(https://www.mundomar.es/wp-content/uploads/2023/10/NUTRIA-2.jpg);
+  background-size: 300% 300%;
+  background-position: center center;
+  box-sizing: border-box;
+  border: 1px solid #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  user-select: none;
+}
+
+.pieza[numero="1"] {
+  background-position: top left;
+}
+
+.pieza[numero="2"] {
+  background-position: top center;
+}
+
+.pieza[numero="3"] {
+  background-position: top right;
+}
+
+.pieza[numero="4"] {
+  background-position: left center;
+}
+
+.pieza[numero="5"] {
+  background-position: center center;
+}
+
+.pieza[numero="6"] {
+  background-position: right center;
+}
+
+.pieza[numero="7"] {
+  background-position: bottom left;
+}
+
+.pieza[numero="8"] {
+  background-position: bottom center;
+}
+
+.pieza[numero="9"] {
+  background-position: bottom right;
+}
